@@ -5,23 +5,23 @@ package diningphil;
  * @author drums
  */
 public class Fork {
-	private boolean isAvailable = true;
-	private int id;
+    private boolean isAvailable = true;
+    private int id;
 
-	public Fork(int id) {
-		super();
-		this.id = id;
-	}
+    public Fork(int id) {
+            super();
+            this.id = id;
+    }
 
-	public synchronized boolean isAvailable() {
-		return isAvailable;
-	}
+    public synchronized boolean isAvailable() {
+            return isAvailable;
+    }
 
-	public synchronized void setAvailable(boolean isAvailable) {
-		this.isAvailable = isAvailable;
-	}
-	
-	public String toString(){
-		return id + "";
-	}
+    public synchronized void setAvailable(boolean isAvailable) {
+            this.isAvailable = isAvailable;
+    }
+
+    public String toString(){
+            return id + "";
+    }
 }
