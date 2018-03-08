@@ -60,18 +60,18 @@ public DiningAppGui() {
     diningApp = new DiningApp();
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setBounds(100, 100, 1000, 1000);
+    setBounds(100, 100, 900, 800);
     contentPane = new JPanel();
     contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
     contentPane.setLayout(null);
     setContentPane(contentPane);
     
-    //creat table
+    //create table
     ImageIcon tableIcon = new ImageIcon("/diningphil/resource/Layer 0-250pixels.png");
     JLabel roundTable = new JLabel(tableIcon, JLabel.CENTER);
     roundTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Layer 0-250pixels.png")));
-    roundTable.setBounds(375, 375, 250 , 250); //345, 290, 250 , 250)
+    roundTable.setBounds(355, 316, 250 , 250); //345, 290, 250 , 250)
     roundTable.setHorizontalAlignment(SwingConstants.CENTER);
     contentPane.add(roundTable);
     
@@ -84,7 +84,7 @@ public DiningAppGui() {
     lblPhilosopher_1.setBackground(Color.BLACK);
     lblPhilosopher_1.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher_1.setBounds(543, 206, 142, 70);
+    lblPhilosopher_1.setBounds(560, 240, 142, 70);
     philosopherLabelList.add(lblPhilosopher_1);
     contentPane.add(lblPhilosopher_1);
 
@@ -97,7 +97,7 @@ public DiningAppGui() {
     lblPhilosopher_2.setBackground(Color.BLACK);
     lblPhilosopher_2.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher_2.setBounds(620, 440, 142, 70);
+    lblPhilosopher_2.setBounds(620, 460, 142, 70);
     philosopherLabelList.add(lblPhilosopher_2);
     contentPane.add(lblPhilosopher_2);
 
@@ -109,7 +109,7 @@ public DiningAppGui() {
     lblPhilosopher_3.setBackground(Color.BLACK);
     lblPhilosopher_3.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher_3.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher_3.setBounds(400, 550, 142, 71);
+    lblPhilosopher_3.setBounds(400, 625, 142, 70);
     philosopherLabelList.add(lblPhilosopher_3);
     contentPane.add(lblPhilosopher_3);
 
@@ -121,7 +121,7 @@ public DiningAppGui() {
     lblPhilosopher_4.setBackground(Color.BLACK);
     lblPhilosopher_4.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher_4.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher_4.setBounds(175, 440, 142, 70);
+    lblPhilosopher_4.setBounds(195, 460, 142, 70);
     philosopherLabelList.add(lblPhilosopher_4);
     contentPane.add(lblPhilosopher_4);
 
@@ -133,7 +133,7 @@ public DiningAppGui() {
     lblPhilosopher.setForeground(Color.WHITE);
     lblPhilosopher.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher.setBounds(257, 206, 142, 70);
+    lblPhilosopher.setBounds(230, 240, 142, 70);
     philosopherLabelList.add(lblPhilosopher);
     contentPane.add(lblPhilosopher);
 
@@ -141,7 +141,7 @@ public DiningAppGui() {
     lblFork_1.setBackground(new Color(205, 92, 92));
     lblFork_1.setOpaque(true);
     lblFork_1.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_1.setBounds(571, 310, 66, 27);
+    lblFork_1.setBounds(600, 370, 66, 27);
     forkLabelList.add(lblFork_1);
     contentPane.add(lblFork_1);
 
@@ -149,7 +149,7 @@ public DiningAppGui() {
     lblFork_2.setBackground(new Color(205, 92, 92));
     lblFork_2.setOpaque(true);
     lblFork_2.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_2.setBounds(504, 463, 66, 27);
+    lblFork_2.setBounds(570, 550, 66, 27);
     forkLabelList.add(lblFork_2);
     contentPane.add(lblFork_2);
 
@@ -157,7 +157,7 @@ public DiningAppGui() {
     lblFork_3.setBackground(new Color(205, 92, 92));
     lblFork_3.setOpaque(true);
     lblFork_3.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_3.setBounds(346, 463, 66, 27);
+    lblFork_3.setBounds(320, 550, 66, 27);
     forkLabelList.add(lblFork_3);
     contentPane.add(lblFork_3);
 
@@ -165,7 +165,7 @@ public DiningAppGui() {
     lblFork_4.setBackground(new Color(205, 92, 92));
     lblFork_4.setOpaque(true);
     lblFork_4.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_4.setBounds(306, 316, 66, 27);
+    lblFork_4.setBounds(270, 370, 66, 27);
     forkLabelList.add(lblFork_4);
     contentPane.add(lblFork_4);
 
@@ -173,37 +173,37 @@ public DiningAppGui() {
     lblFork_5.setBackground(new Color(205, 92, 92));
     lblFork_5.setOpaque(true);
     lblFork_5.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_5.setBounds(425, 228, 66, 27);
+    lblFork_5.setBounds(440, 280, 66, 27);
     forkLabelList.add(lblFork_5);
     contentPane.add(lblFork_5);
 
     JProgressBar progressBar_1 = new JProgressBar();
     progressBar_1.setMaximum(50);
-    progressBar_1.setBounds(630, 173, 146, 22);
+    progressBar_1.setBounds(560, 195, 142, 22);
     progressBars.add(progressBar_1);
     contentPane.add(progressBar_1);
 
     JProgressBar progressBar_2 = new JProgressBar();
     progressBar_2.setMaximum(50);
-    progressBar_2.setBounds(630, 369, 146, 22);
+    progressBar_2.setBounds(620, 415, 142, 22);
     progressBars.add(progressBar_2);
     contentPane.add(progressBar_2);
 
     JProgressBar progressBar_3 = new JProgressBar();
     progressBar_3.setMaximum(50);
-    progressBar_3.setBounds(397, 583, 146, 27);
+    progressBar_3.setBounds(397, 583, 142, 22);
     progressBars.add(progressBar_3);
     contentPane.add(progressBar_3);
 
     JProgressBar progressBar_4 = new JProgressBar();
     progressBar_4.setMaximum(50);
-    progressBar_4.setBounds(102, 369, 146, 22);
+    progressBar_4.setBounds(195, 415, 142, 22);
     progressBars.add(progressBar_4);
     contentPane.add(progressBar_4);
 
     JProgressBar progressBar_5 = new JProgressBar();
     progressBar_5.setMaximum(50);
-    progressBar_5.setBounds(158, 173, 146, 22);
+    progressBar_5.setBounds(230, 195, 142, 22);
     progressBars.add(progressBar_5);
     contentPane.add(progressBar_5);
 

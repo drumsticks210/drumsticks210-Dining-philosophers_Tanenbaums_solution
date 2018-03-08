@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DiningPhil">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/DiningPhil.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
