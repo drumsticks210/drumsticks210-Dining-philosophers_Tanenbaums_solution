@@ -1,10 +1,24 @@
 package diningphil;
 
-/**
+/*
+ * CS409 Team Project
+ * March 21, 2018
+ * Tannenbaum's Solution to the Dining Philosophers Solution
+ * Team 2
+ * Matthew Annerton, Dina Brown, Tristan Cone, Quang Tran
  *
  * @author drums
  */
+
 import java.util.ArrayList;
+
+/*
+ * This function begins the application for the
+ * dining philosophers program.
+ * @return Returns the list of philosophers
+ * @return Returns the list of forks
+ */
+
 
 public class DiningApp {
     private DiningTable diningTable;
@@ -26,6 +40,7 @@ public void start() {
     startDining();
 }
 
+    // Get philosophers
 private void startDining() {
     Thread diner1 = new Thread(philosophers.get(0));
     Thread diner2 = new Thread(philosophers.get(1));
@@ -39,6 +54,7 @@ private void startDining() {
     diner5.start();
 }
 
+    // Add diners
 private void addDiners() {
     int rightFork = 4;
     for(int i = 0; i < 5; ++i){

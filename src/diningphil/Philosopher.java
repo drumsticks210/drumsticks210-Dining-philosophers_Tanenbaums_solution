@@ -1,10 +1,32 @@
 package diningphil;
 
-/**
+/*
+ *
+ * CS409 Team Project
+ * March 21, 2018
+ * Tannenbaum's Solution to the Dining Philosophers Solution
+ * Team 2
+ * Matthew Annerton, Dina Brown, Tristan Cone, Quang Tran
  *
  * @author drums
+ *
  */
+
 import java.util.ArrayList;
+
+/*
+ * This function will declare variables, implement the
+ * philosophers, check to see if both forks are available
+ * so the philosopher can eat and keep a running total of
+ * how much the philosopher has eaten
+ * @param name			This will hold the name of the philosopher
+ * @param isSnoozing		Sets the philosopher to snoozing
+ * @param isEating		Sets the philosopher to eat
+ * @param isFinished		The philosopher is done eating
+ * @param hasLeftFork		Sets that the philosopher has the left fork
+ * @param hasRightFork	Sets that the philosopher has the right fork
+ * @param amountEaten		Shows the current amount of food eaten
+ */
 
 public class Philosopher implements Runnable{
 private boolean isEating;

@@ -1,9 +1,15 @@
 package diningphil;
 
-/**
+/*
+ * CS409 Team Project
+ * March 21, 2018
+ * Tannenbaum's Solution to the Dining Philosophers Solution
+ * Team 2
+ * Matthew Annerton, Dina Brown, Tristan Cone, Quang Tran
  *
  * @author drums
  */
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -24,9 +30,9 @@ import javax.swing.JTextArea;
 
 public class DiningAppGui extends JFrame {
 
-/**
- * 
- */
+    /*
+     * Declare private variables and arrays
+     */
 private static final long serialVersionUID = -9102921349267475005L;
 private JPanel contentPane;
 private ArrayList<JLabel> forkLabelList = new ArrayList<>();
