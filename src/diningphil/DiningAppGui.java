@@ -62,7 +62,7 @@ public static void main(String[] args) {
  * Create the frame.
  */
 public DiningAppGui() {
-    setTitle("DINING PHILOSOPHERS BY GORUP 2");
+    setTitle("DINING PHILOSOPHERS BY GROUP 2");
     diningApp = new DiningApp();
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
