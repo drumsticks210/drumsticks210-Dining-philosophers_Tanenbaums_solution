@@ -42,7 +42,7 @@ private ArrayList<JLabel> zzzList = new ArrayList<>();
 private ArrayList<JLabel> finishedList = new ArrayList<>();
 private DiningApp diningApp;
 
-/**
+/*
  * Launch the application.
  */
 public static void main(String[] args) {
@@ -58,7 +58,7 @@ public static void main(String[] args) {
     });
 }
 
-/**
+/*
  * Create the frame.
  */
 public DiningAppGui() {
@@ -73,15 +73,24 @@ public DiningAppGui() {
     contentPane.setLayout(null);
     setContentPane(contentPane);
     
-    //create table
+    /* create table */
     ImageIcon tableIcon = new ImageIcon("/diningphil/resource/Layer 0-250pixels.png");
     JLabel roundTable = new JLabel(tableIcon, JLabel.CENTER);
     roundTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Layer 0-250pixels.png")));
     roundTable.setBounds(355, 316, 250 , 250); //345, 290, 250 , 250)
     roundTable.setHorizontalAlignment(SwingConstants.CENTER);
     contentPane.add(roundTable);
+
+    /* Test area*/
+    JTextArea txtrObserveTheDining = new JTextArea();
+    txtrObserveTheDining.setEditable(false);
+    txtrObserveTheDining.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    txtrObserveTheDining.setLineWrap(true);
+    txtrObserveTheDining.setText("- 5 philosophers sit at a table\r\n- There are only 5 forks on the table \r\n- They are all hungry & want to eat\r\n- They can only eat when the fork to the left & right of them are both available\r\n- After eating for a period, they then take a nap");
+    txtrObserveTheDining.setBounds(40, 11, 843, 141);
+    contentPane.add(txtrObserveTheDining);
     
-    
+    /*Creating Philosopher 1: David Hume.*/
     ImageIcon icon = new ImageIcon("/diningphil/resource/David_Hume.png");
     JLabel lblPhilosopher_1 = new JLabel(icon, JLabel.CENTER);
     lblPhilosopher_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/David_Hume.png")));
@@ -93,8 +102,27 @@ public DiningAppGui() {
     lblPhilosopher_1.setBounds(560, 240, 142, 70);
     philosopherLabelList.add(lblPhilosopher_1);
     contentPane.add(lblPhilosopher_1);
+    /* Thinking...*/
+    JLabel Thinking = new JLabel("Thinking...");
+    Thinking.setVisible(false);
+    Thinking.setBounds(712, 240, 65, 14);
+    zzzList.add(Thinking);
+    contentPane.add(Thinking);
+    /*Progress bar*/
+    JProgressBar progressBar_1 = new JProgressBar();
+    progressBar_1.setMaximum(50);
+    progressBar_1.setBounds(560, 195, 142, 22);
+    progressBars.add(progressBar_1);
+    contentPane.add(progressBar_1);
+    JTextArea progressBarTxt_1 = new JTextArea();
+    progressBarTxt_1.setEditable(false);
+    progressBarTxt_1.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    progressBarTxt_1.setLineWrap(true);
+    progressBarTxt_1.setText("Hunger Level");
+    progressBarTxt_1.setBounds(560, 173, 142, 22);
+    contentPane.add(progressBarTxt_1);
 
-
+    /*Creating Philosopher 2: René_Descartes.*/
     ImageIcon icon2 = new ImageIcon("/diningphil/resource/René_Descartes.png");
     JLabel lblPhilosopher_2 = new JLabel(icon2, JLabel.CENTER);
     lblPhilosopher_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/René_Descartes.png")));
@@ -106,7 +134,28 @@ public DiningAppGui() {
     lblPhilosopher_2.setBounds(620, 460, 142, 70);
     philosopherLabelList.add(lblPhilosopher_2);
     contentPane.add(lblPhilosopher_2);
+    /* Thinking... */
+    JLabel lblZzz2 = new JLabel("Thinking...");
+    lblZzz2.setVisible(false);
+    lblZzz2.setBounds(762, 470, 65, 14);
+    zzzList.add(lblZzz2);
+    contentPane.add(lblZzz2);
+    /*Progress bar*/
+    JProgressBar progressBar_2 = new JProgressBar();
+    progressBar_2.setMaximum(50);
+    progressBar_2.setBounds(620, 415, 142, 22);
+    progressBars.add(progressBar_2);
+    contentPane.add(progressBar_2);
+    JTextArea progressBarTxt_2 = new JTextArea();
+    progressBarTxt_2.setEditable(false);
+    progressBarTxt_2.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    progressBarTxt_2.setLineWrap(true);
+    progressBarTxt_2.setText("Hunger Level");
+    progressBarTxt_2.setBounds(620, 393, 142, 22);
+    contentPane.add(progressBarTxt_2);
 
+
+    /* Creating Philosopher 3: John_Lock. */
     ImageIcon icon3 = new ImageIcon("/diningphil/resource/John_Lock.jpng");
     JLabel lblPhilosopher_3 = new JLabel(icon3, JLabel.CENTER);
     lblPhilosopher_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/John_Lock.png")));
@@ -115,10 +164,30 @@ public DiningAppGui() {
     lblPhilosopher_3.setBackground(Color.BLACK);
     lblPhilosopher_3.setHorizontalAlignment(SwingConstants.CENTER);
     lblPhilosopher_3.setFont(new Font("Tahoma", Font.BOLD, 12));
-    lblPhilosopher_3.setBounds(400, 625, 142, 70);
+    lblPhilosopher_3.setBounds(400, 645, 142, 70);
     philosopherLabelList.add(lblPhilosopher_3);
     contentPane.add(lblPhilosopher_3);
+    /* Thinking .. */
+    JLabel lblZzz3 = new JLabel("Thinking...");
+    lblZzz3.setVisible(false);
+    lblZzz3.setBounds(552, 645, 65, 14);
+    zzzList.add(lblZzz3);
+    contentPane.add(lblZzz3);
+    /*Progress bar*/
+    JProgressBar progressBar_3 = new JProgressBar();
+    progressBar_3.setMaximum(50);
+    progressBar_3.setBounds(397, 603, 142, 22);
+    progressBars.add(progressBar_3);
+    contentPane.add(progressBar_3);
+    JTextArea progressBarTxt_3 = new JTextArea();
+    progressBarTxt_3.setEditable(false);
+    progressBarTxt_3.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    progressBarTxt_3.setLineWrap(true);
+    progressBarTxt_3.setText("Hunger Level");
+    progressBarTxt_3.setBounds(397, 583, 142, 22);
+    contentPane.add(progressBarTxt_3);
 
+    /*Creating Philosopher 4: Mandeville */
     ImageIcon icon4 = new ImageIcon("/diningphil/resource/Mandeville.png");
     JLabel lblPhilosopher_4 = new JLabel(icon4, JLabel.CENTER);
     lblPhilosopher_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Mandeville.png")));
@@ -130,7 +199,27 @@ public DiningAppGui() {
     lblPhilosopher_4.setBounds(195, 460, 142, 70);
     philosopherLabelList.add(lblPhilosopher_4);
     contentPane.add(lblPhilosopher_4);
+    /* Thinking .. */
+    JLabel lblZzz4 = new JLabel("Thinking...");
+    lblZzz4.setVisible(false);
+    lblZzz4.setBounds(115, 460, 65, 14);
+    zzzList.add(lblZzz4);
+    contentPane.add(lblZzz4);
+    /*Progress bar*/
+    JProgressBar progressBar_4 = new JProgressBar();
+    progressBar_4.setMaximum(50);
+    progressBar_4.setBounds(195, 415, 142, 22);
+    progressBars.add(progressBar_4);
+    contentPane.add(progressBar_4);
+    JTextArea progressBarTxt_4 = new JTextArea();
+    progressBarTxt_4.setEditable(false);
+    progressBarTxt_4.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    progressBarTxt_4.setLineWrap(true);
+    progressBarTxt_4.setText("Hunger Level");
+    progressBarTxt_4.setBounds(195, 395, 142, 22);
+    contentPane.add(progressBarTxt_4);
 
+    /*Creating Philosopher 5: adam-smith */
     ImageIcon icon5 = new ImageIcon("/diningphil/resource/adam-smith.png");
     JLabel lblPhilosopher = new JLabel(icon5, JLabel.CENTER);
     lblPhilosopher.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/adam-smith.png")));
@@ -142,12 +231,31 @@ public DiningAppGui() {
     lblPhilosopher.setBounds(230, 240, 142, 70);
     philosopherLabelList.add(lblPhilosopher);
     contentPane.add(lblPhilosopher);
+    /* Thinking .. */
+    JLabel lblZzz5 = new JLabel("Thinking...");
+    lblZzz5.setVisible(false);
+    lblZzz5.setBounds(150, 240, 65, 14);
+    zzzList.add(lblZzz5);
+    contentPane.add(lblZzz5);
+    /*Progress bar*/
+    JProgressBar progressBar_5 = new JProgressBar();
+    progressBar_5.setMaximum(50);
+    progressBar_5.setBounds(230, 195, 142, 22);
+    progressBars.add(progressBar_5);
+    contentPane.add(progressBar_5);
+    JTextArea progressBarTxt_5 = new JTextArea();
+    progressBarTxt_5.setEditable(false);
+    progressBarTxt_5.setFont(new Font("Yu Gothic", Font.BOLD, 13));
+    progressBarTxt_5.setLineWrap(true);
+    progressBarTxt_5.setText("Hunger Level");
+    progressBarTxt_5.setBounds(230, 175, 142, 22);
+    contentPane.add(progressBarTxt_5);
 
     JLabel lblFork_1 = new JLabel("fork 1");
     lblFork_1.setBackground(new Color(205, 92, 92));
     lblFork_1.setOpaque(true);
     lblFork_1.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_1.setBounds(600, 370, 66, 27);
+    lblFork_1.setBounds(600, 350, 66, 27);
     forkLabelList.add(lblFork_1);
     contentPane.add(lblFork_1);
 
@@ -171,7 +279,7 @@ public DiningAppGui() {
     lblFork_4.setBackground(new Color(205, 92, 92));
     lblFork_4.setOpaque(true);
     lblFork_4.setHorizontalAlignment(SwingConstants.CENTER);
-    lblFork_4.setBounds(270, 370, 66, 27);
+    lblFork_4.setBounds(270, 350, 66, 27);
     forkLabelList.add(lblFork_4);
     contentPane.add(lblFork_4);
 
@@ -182,74 +290,6 @@ public DiningAppGui() {
     lblFork_5.setBounds(440, 280, 66, 27);
     forkLabelList.add(lblFork_5);
     contentPane.add(lblFork_5);
-
-    JProgressBar progressBar_1 = new JProgressBar();
-    progressBar_1.setMaximum(50);
-    progressBar_1.setBounds(560, 195, 142, 22);
-    progressBars.add(progressBar_1);
-    contentPane.add(progressBar_1);
-
-    JProgressBar progressBar_2 = new JProgressBar();
-    progressBar_2.setMaximum(50);
-    progressBar_2.setBounds(620, 415, 142, 22);
-    progressBars.add(progressBar_2);
-    contentPane.add(progressBar_2);
-
-    JProgressBar progressBar_3 = new JProgressBar();
-    progressBar_3.setMaximum(50);
-    progressBar_3.setBounds(397, 583, 142, 22);
-    progressBars.add(progressBar_3);
-    contentPane.add(progressBar_3);
-
-    JProgressBar progressBar_4 = new JProgressBar();
-    progressBar_4.setMaximum(50);
-    progressBar_4.setBounds(195, 415, 142, 22);
-    progressBars.add(progressBar_4);
-    contentPane.add(progressBar_4);
-
-    JProgressBar progressBar_5 = new JProgressBar();
-    progressBar_5.setMaximum(50);
-    progressBar_5.setBounds(230, 195, 142, 22);
-    progressBars.add(progressBar_5);
-    contentPane.add(progressBar_5);
-
-    JTextArea txtrObserveTheDining = new JTextArea();
-    txtrObserveTheDining.setEditable(false);
-    txtrObserveTheDining.setFont(new Font("Yu Gothic", Font.BOLD, 13));
-    txtrObserveTheDining.setLineWrap(true);
-    txtrObserveTheDining.setText("- 5 philosophers sit at a table\r\n- There are only 5 forks on the table \r\n- They are all hungry & want to eat\r\n- They can only eat when the fork to the left & right of them are both available\r\n- After eating for a period, they then take a nap");
-    txtrObserveTheDining.setBounds(40, 11, 843, 141);
-    contentPane.add(txtrObserveTheDining);
-
-    JLabel Thinking = new JLabel("Thinking...");
-    Thinking.setVisible(false);
-    Thinking.setBounds(700, 206, 65, 14);
-    zzzList.add(Thinking);
-    contentPane.add(Thinking);
-
-    JLabel lblZzz2 = new JLabel("Thinking...");
-    lblZzz2.setVisible(false);
-    lblZzz2.setBounds(785, 402, 65, 14);
-    zzzList.add(lblZzz2);
-    contentPane.add(lblZzz2);
-
-    JLabel lblZzz3 = new JLabel("Thinking...");
-    lblZzz3.setVisible(false);
-    lblZzz3.setBounds(535, 501, 65, 14);
-    zzzList.add(lblZzz3);
-    contentPane.add(lblZzz3);
-
-    JLabel lblZzz4 = new JLabel("Thinking...");
-    lblZzz4.setVisible(false);
-    lblZzz4.setBounds(337, 402, 65, 14);
-    zzzList.add(lblZzz4);
-    contentPane.add(lblZzz4);
-
-    JLabel lblZzz5 = new JLabel("Thinking...");
-    lblZzz5.setVisible(false);
-    lblZzz5.setBounds(382, 206, 65, 14);
-    zzzList.add(lblZzz5);
-    contentPane.add(lblZzz5);
 
     JLabel lblFinishedEating1 = new JLabel("Finished eating");
     lblFinishedEating1.setOpaque(true);
