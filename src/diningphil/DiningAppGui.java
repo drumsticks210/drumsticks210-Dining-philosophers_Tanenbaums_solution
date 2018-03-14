@@ -40,7 +40,7 @@ public class DiningAppGui extends JFrame {
     private ArrayList<JProgressBar> progressBars = new ArrayList<>();
     private ArrayList<JLabel> thinkList = new ArrayList<>();
     private ArrayList<JLabel> finishedList = new ArrayList<>();
-    private ArrayList<JLabel> eatingList = new ArrayList<>();
+ //   private ArrayList<JLabel> ledgenList = new ArrayList<>();
     private DiningApp diningApp;
 
     /*
@@ -73,6 +73,7 @@ public class DiningAppGui extends JFrame {
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         contentPane.setLayout(null);
         setContentPane(contentPane);
+
 
         /* create table */
         ImageIcon tableIcon = new ImageIcon("/diningphil/resource/Layer 0-250pixels.png");
