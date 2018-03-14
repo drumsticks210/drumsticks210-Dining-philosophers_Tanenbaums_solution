@@ -12,6 +12,7 @@ package diningphil;
  *
  */
 
+import java.awt.*;
 import java.util.ArrayList;
 
 /*
@@ -28,149 +29,152 @@ import java.util.ArrayList;
  * @param amountEaten		Shows the current amount of food eaten
  */
 
-public class Philosopher implements Runnable{
-private boolean isEating;
-private boolean hasLeftFork;
-private boolean hasRightFork;
-private int amountEaten;
-private boolean isFinished;
-private boolean isThinking;
-private String name;
-private ArrayList<Fork> forks = new ArrayList<>();
+public class Philosopher implements Runnable {
+    private boolean isEating;
+    private boolean hasLeftFork;
+    private boolean hasRightFork;
+    private int amountEaten;
+    private boolean isFinished;
+    private boolean isThinking;
+    private String name;
+    private ArrayList<Fork> forks = new ArrayList<>();
 
-public Philosopher(int name, Fork leftFork, Fork rightFork) {
+    public Philosopher(int name, Fork leftFork, Fork rightFork) {
         super();
         this.name = "Philosopher: " + name;
         forks.add(leftFork);
         forks.add(rightFork);
-}
+    }
 
-public synchronized boolean isThinking() {
+    public synchronized boolean isThinking() {
         return isThinking;
-}
+    }
 
-public synchronized void setThinking(boolean isThinking) {
+    public synchronized void setThinking(boolean isThinking) {
         this.isThinking = isThinking;
-}
+    }
 
-public synchronized boolean isEating() {
+    public synchronized boolean isEating() {
 
         return isEating;
-}
+    }
 
-public synchronized void setEating(boolean isEating) {
+    public synchronized void setEating(boolean isEating) {
         this.isEating = isEating;
-}
+    }
 
-public synchronized boolean hasLeftFork() {
+    public synchronized boolean hasLeftFork() {
         return hasLeftFork;
-}
+    }
 
-public synchronized boolean isFinished() {
+    public synchronized boolean isFinished() {
         return isFinished;
-}
+    }
 
-public synchronized void setFinished(boolean isFinished) {
+    public synchronized void setFinished(boolean isFinished) {
         this.isFinished = isFinished;
-}
+    }
 
-public synchronized void hasLeftFork(boolean hasLeftFork) {
+    public synchronized void hasLeftFork(boolean hasLeftFork) {
         this.hasLeftFork = hasLeftFork;
-}
+    }
 
-public synchronized boolean hasRightFork() {
+    public synchronized boolean hasRightFork() {
         return hasRightFork;
-}
+    }
 
-public synchronized void hasRightFork(boolean hasRightFork) {
+    public synchronized void hasRightFork(boolean hasRightFork) {
         this.hasRightFork = hasRightFork;
-}
+    }
 
-public int getAmountEaten() {
+    public int getAmountEaten() {
         return amountEaten;
-}
+    }
 
-public void setAmountEaten(int amountEaten) {
+    public void setAmountEaten(int amountEaten) {
         this.amountEaten = amountEaten;
-}
+    }
 
-public String getName() {
+    public String getName() {
         return name;
-}
+    }
 
-public void setName(String name) {
+    public void setName(String name) {
         this.name = name;
-}
+    }
 
-@Override
-public void run() {
+    @Override
+    public void run() {
         while (amountEaten < 51) {
-                checkIfLeftForkAvailable();
-                if(hasLeftFork)checkIfRightForkAvailable();
-                if (hasLeftFork && hasRightFork) {
-                        isEating = true;
-                        startEating();
-                } else{
-                        try {
-                                Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                                e.printStackTrace();
-                        }
+            checkIfLeftForkAvailable();
+            if (hasLeftFork) checkIfRightForkAvailable();
+            if (hasLeftFork && hasRightFork) {
+                isEating = true;
+                startEating();
+            } else {
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
+            }
         }
         isFinished = true;
-}
+    }
 
-private void startEating() {
-        for(int i = 0; i < 10; ++i){
-                ++amountEaten;
-                System.out.println(this.name + " is now eating, amount is now: " + amountEaten);
-                try {
-                        Thread.sleep(500);
-                } catch (InterruptedException e) {
-                        e.printStackTrace();
-                }
+    private void startEating() {
+        for (int i = 0; i < 10; ++i) {
+            ++amountEaten;
+            System.out.println(this.name + " is now eating, amount is now: " + amountEaten);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        for(Fork fork : forks){
-                fork.setAvailable(true);
+        for (Fork fork : forks) {
+            fork.setAvailable(true);
+
         }
         isEating = false;
         try {
-                isThinking = true;
-                Thread.sleep(5000);
-                isThinking = false;
+            isThinking = true;
+            Thread.sleep(5000);
+            isThinking = false;
         } catch (InterruptedException e) {
-                e.printStackTrace();
+            e.printStackTrace();
         }
-}
+    }
 
-private void checkIfRightForkAvailable() {
+    private void checkIfRightForkAvailable() {
         System.out.println(this.name + " checking if right fork available");
-        if(forks.get(1).isAvailable()){
-                hasRightFork = true;
-                forks.get(1).setAvailable(false);
-                System.out.println(this.name + " right fork is available & now setting it to: " + forks.get(1).isAvailable());
-                return;
+        if (forks.get(1).isAvailable()) {
+            hasRightFork = true;
+            forks.get(1).setAvailable(false);
+            System.out.println(this.name + " right fork is available & now setting it to: " + forks.get(1).isAvailable());
+            return;
         }
         System.out.println(this.name + " right fork was not available & status is: " + forks.get(1).isAvailable());
         forks.get(0).setAvailable(true);
         hasRightFork = false;
         hasLeftFork = false;
-}
+    }
 
-private void checkIfLeftForkAvailable() {
+    private void checkIfLeftForkAvailable() {
         System.out.println(this.name + " checking if left fork available");
-        if(forks.get(0).isAvailable()){
-                hasLeftFork = true;
-                forks.get(0).setAvailable(false);
-                System.out.println(this.name + " left fork is available & now setting it to: " + forks.get(0).isAvailable());
-                return;
+        if (forks.get(0).isAvailable()) {
+            hasLeftFork = true;
+            forks.get(0).setAvailable(false);
+            System.out.println(this.name + " left fork is available & now setting it to: " + forks.get(0).isAvailable());
+            return;
         }
         System.out.println(this.name + " left fork was not available & status is: " + forks.get(0).isAvailable());
         hasLeftFork = false;
+    }
+
+    public String toString() {
+        return name + " has forks " + forks;
+    }
 }
 
-public String toString(){
-        return name + " has forks " + forks;
-}
-}
+

@@ -10,6 +10,8 @@ package diningphil;
  * @author drums
  */
 
+import com.intellij.ui.JBColor;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -40,7 +42,7 @@ public class DiningAppGui extends JFrame {
     private ArrayList<JProgressBar> progressBars = new ArrayList<>();
     private ArrayList<JLabel> thinkList = new ArrayList<>();
     private ArrayList<JLabel> finishedList = new ArrayList<>();
- //   private ArrayList<JLabel> ledgenList = new ArrayList<>();
+    private ArrayList<JLabel> legendList = new ArrayList<>();
     private DiningApp diningApp;
 
     /*
@@ -79,9 +81,18 @@ public class DiningAppGui extends JFrame {
         ImageIcon tableIcon = new ImageIcon("/diningphil/resource/Layer 0-250pixels.png");
         JLabel roundTable = new JLabel(tableIcon, JLabel.CENTER);
         roundTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Layer 0-250pixels.png")));
-        roundTable.setBounds(355, 316, 250, 250); //345, 290, 250 , 250)
+        roundTable.setBounds(375, 316, 250, 250); //345, 290, 250 , 250)
         roundTable.setHorizontalAlignment(SwingConstants.CENTER);
         contentPane.add(roundTable);
+
+        /* legend */
+        JLabel legend = new JLabel();
+        legend.setOpaque(true);
+        legend.setBackground(Color.LIGHT_GRAY);
+        legend.setVisible(true);
+        legend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Green.png")));
+        legend.setBounds(20, 240, 100, 250);
+        contentPane.add(legend);
 
         /* Test area*/
         JTextArea txtrObserveTheDining = new JTextArea();
@@ -105,19 +116,21 @@ public class DiningAppGui extends JFrame {
         lblPhilosopher_1.setBackground(Color.BLACK);
         lblPhilosopher_1.setHorizontalAlignment(SwingConstants.CENTER);
         lblPhilosopher_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-        lblPhilosopher_1.setBounds(560, 240, 142, 70);
+        lblPhilosopher_1.setBounds(580, 240, 142, 70);
         philosopherLabelList.add(lblPhilosopher_1);
         contentPane.add(lblPhilosopher_1);
         /* Thinking...*/
         JLabel Thinking = new JLabel("Thinking...");
         Thinking.setVisible(false);
-        Thinking.setBounds(712, 240, 65, 14);
+        Thinking.setBounds(732, 240, 65, 14);
         thinkList.add(Thinking);
         contentPane.add(Thinking);
         /*Progress bar*/
         JProgressBar progressBar_1 = new JProgressBar();
+        progressBar_1.setForeground(Color.RED);
+        progressBar_1.setBackground(new Color(51, 204, 255));
         progressBar_1.setMaximum(50);
-        progressBar_1.setBounds(560, 195, 142, 22);
+        progressBar_1.setBounds(580, 195, 142, 22);
         progressBars.add(progressBar_1);
         contentPane.add(progressBar_1);
         JTextArea progressBarTxt_1 = new JTextArea();
@@ -125,14 +138,14 @@ public class DiningAppGui extends JFrame {
         progressBarTxt_1.setFont(new Font("Yu Gothic", Font.BOLD, 13));
         progressBarTxt_1.setLineWrap(true);
         progressBarTxt_1.setText("Hunger Level");
-        progressBarTxt_1.setBounds(560, 173, 142, 22);
+        progressBarTxt_1.setBounds(590, 173, 142, 22);
         contentPane.add(progressBarTxt_1);
         /* Finished Eating */
         JLabel lblFinishedEating1 = new JLabel("Finished eating");
         lblFinishedEating1.setOpaque(true);
         lblFinishedEating1.setVisible(false);
         lblFinishedEating1.setBackground(new Color(255, 20, 147));
-        lblFinishedEating1.setBounds(712, 240, 108, 20);
+        lblFinishedEating1.setBounds(732, 240, 108, 20);
         finishedList.add(lblFinishedEating1);
         contentPane.add(lblFinishedEating1);
 
@@ -145,19 +158,21 @@ public class DiningAppGui extends JFrame {
         lblPhilosopher_2.setBackground(Color.BLACK);
         lblPhilosopher_2.setHorizontalAlignment(SwingConstants.CENTER);
         lblPhilosopher_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-        lblPhilosopher_2.setBounds(620, 460, 142, 70);
+        lblPhilosopher_2.setBounds(640, 460, 142, 70);
         philosopherLabelList.add(lblPhilosopher_2);
         contentPane.add(lblPhilosopher_2);
         /* Thinking... */
         JLabel Thinking2 = new JLabel("Thinking...");
         Thinking2.setVisible(false);
-        Thinking2.setBounds(762, 470, 65, 14);
+        Thinking2.setBounds(782, 470, 65, 14);
         thinkList.add(Thinking2);
         contentPane.add(Thinking2);
         /*Progress bar*/
         JProgressBar progressBar_2 = new JProgressBar();
+        progressBar_2.setForeground(Color.RED);
+        progressBar_2.setBackground(new Color(51, 204, 255));
         progressBar_2.setMaximum(50);
-        progressBar_2.setBounds(620, 415, 142, 22);
+        progressBar_2.setBounds(640, 415, 142, 22);
         progressBars.add(progressBar_2);
         contentPane.add(progressBar_2);
         JTextArea progressBarTxt_2 = new JTextArea();
@@ -165,14 +180,14 @@ public class DiningAppGui extends JFrame {
         progressBarTxt_2.setFont(new Font("Yu Gothic", Font.BOLD, 13));
         progressBarTxt_2.setLineWrap(true);
         progressBarTxt_2.setText("Hunger Level");
-        progressBarTxt_2.setBounds(620, 393, 142, 22);
+        progressBarTxt_2.setBounds(640, 393, 142, 22);
         contentPane.add(progressBarTxt_2);
         /* Finished eating */
         JLabel lblFinishedEating2 = new JLabel("Finished eating");
         lblFinishedEating2.setOpaque(true);
         lblFinishedEating2.setVisible(false);
         lblFinishedEating2.setBackground(new Color(255, 20, 147));
-        lblFinishedEating2.setBounds(762, 490, 108, 20);
+        lblFinishedEating2.setBounds(792, 490, 108, 20);
         finishedList.add(lblFinishedEating2);
         contentPane.add(lblFinishedEating2);
 
@@ -185,19 +200,21 @@ public class DiningAppGui extends JFrame {
         lblPhilosopher_3.setBackground(Color.BLACK);
         lblPhilosopher_3.setHorizontalAlignment(SwingConstants.CENTER);
         lblPhilosopher_3.setFont(new Font("Tahoma", Font.BOLD, 12));
-        lblPhilosopher_3.setBounds(400, 645, 142, 70);
+        lblPhilosopher_3.setBounds(420, 645, 142, 70);
         philosopherLabelList.add(lblPhilosopher_3);
         contentPane.add(lblPhilosopher_3);
         /* Thinking .. */
         JLabel Thinking3 = new JLabel("Thinking...");
         Thinking3.setVisible(false);
-        Thinking3.setBounds(552, 645, 65, 14);
+        Thinking3.setBounds(572, 645, 65, 14);
         thinkList.add(Thinking3);
         contentPane.add(Thinking3);
         /*Progress bar*/
         JProgressBar progressBar_3 = new JProgressBar();
+        progressBar_3.setForeground(Color.RED);
+        progressBar_3.setBackground(new Color(51, 204, 255));
         progressBar_3.setMaximum(50);
-        progressBar_3.setBounds(397, 603, 142, 22);
+        progressBar_3.setBounds(417, 603, 142, 22);
         progressBars.add(progressBar_3);
         contentPane.add(progressBar_3);
         JTextArea progressBarTxt_3 = new JTextArea();
@@ -205,14 +222,14 @@ public class DiningAppGui extends JFrame {
         progressBarTxt_3.setFont(new Font("Yu Gothic", Font.BOLD, 13));
         progressBarTxt_3.setLineWrap(true);
         progressBarTxt_3.setText("Hunger Level");
-        progressBarTxt_3.setBounds(397, 583, 142, 22);
+        progressBarTxt_3.setBounds(417, 583, 142, 22);
         contentPane.add(progressBarTxt_3);
         /* Finished eating */
         JLabel lblFinishedEating3 = new JLabel("Finished eating");
         lblFinishedEating3.setOpaque(true);
         lblFinishedEating3.setVisible(false);
         lblFinishedEating3.setBackground(new Color(255, 20, 147));
-        lblFinishedEating3.setBounds(552, 665, 108, 20);
+        lblFinishedEating3.setBounds(572, 665, 108, 20);
         finishedList.add(lblFinishedEating3);
         contentPane.add(lblFinishedEating3);
 
@@ -225,19 +242,21 @@ public class DiningAppGui extends JFrame {
         lblPhilosopher_4.setBackground(Color.BLACK);
         lblPhilosopher_4.setHorizontalAlignment(SwingConstants.CENTER);
         lblPhilosopher_4.setFont(new Font("Tahoma", Font.BOLD, 12));
-        lblPhilosopher_4.setBounds(195, 460, 142, 70);
+        lblPhilosopher_4.setBounds(215, 460, 142, 70);
         philosopherLabelList.add(lblPhilosopher_4);
         contentPane.add(lblPhilosopher_4);
         /* Thinking .. */
         JLabel Thinking4 = new JLabel("Thinking...");
         Thinking4.setVisible(false);
-        Thinking4.setBounds(115, 460, 65, 14);
+        Thinking4.setBounds(135, 460, 65, 14);
         thinkList.add(Thinking4);
         contentPane.add(Thinking4);
         /*Progress bar*/
         JProgressBar progressBar_4 = new JProgressBar();
+        progressBar_4.setForeground(Color.RED);
+        progressBar_4.setBackground(new Color(51, 204, 255));
         progressBar_4.setMaximum(50);
-        progressBar_4.setBounds(195, 415, 142, 22);
+        progressBar_4.setBounds(215, 415, 142, 22);
         progressBars.add(progressBar_4);
         contentPane.add(progressBar_4);
         JTextArea progressBarTxt_4 = new JTextArea();
@@ -245,14 +264,14 @@ public class DiningAppGui extends JFrame {
         progressBarTxt_4.setFont(new Font("Yu Gothic", Font.BOLD, 13));
         progressBarTxt_4.setLineWrap(true);
         progressBarTxt_4.setText("Hunger Level");
-        progressBarTxt_4.setBounds(195, 395, 142, 22);
+        progressBarTxt_4.setBounds(215, 395, 142, 22);
         contentPane.add(progressBarTxt_4);
         /* Finished Eating */
         JLabel lblFinishedEating4 = new JLabel("Finished eating");
         lblFinishedEating4.setOpaque(true);
         lblFinishedEating4.setVisible(false);
         lblFinishedEating4.setBackground(new Color(255, 20, 147));
-        lblFinishedEating4.setBounds(115, 480, 108, 20);
+        lblFinishedEating4.setBounds(135, 480, 108, 20);
         finishedList.add(lblFinishedEating4);
         contentPane.add(lblFinishedEating4);
 
@@ -265,19 +284,21 @@ public class DiningAppGui extends JFrame {
         lblPhilosopher.setForeground(Color.WHITE);
         lblPhilosopher.setHorizontalAlignment(SwingConstants.CENTER);
         lblPhilosopher.setFont(new Font("Tahoma", Font.BOLD, 12));
-        lblPhilosopher.setBounds(230, 240, 142, 70);
+        lblPhilosopher.setBounds(250, 240, 142, 70);
         philosopherLabelList.add(lblPhilosopher);
         contentPane.add(lblPhilosopher);
         /* Thinking .. */
         JLabel Thinking5 = new JLabel("Thinking...");
         Thinking5.setVisible(false);
-        Thinking5.setBounds(150, 240, 65, 14);
+        Thinking5.setBounds(170, 240, 65, 14);
         thinkList.add(Thinking5);
         contentPane.add(Thinking5);
         /*Progress bar*/
         JProgressBar progressBar_5 = new JProgressBar();
+        progressBar_5.setForeground(Color.RED);
+        progressBar_5.setBackground(new Color(51, 204, 255));
         progressBar_5.setMaximum(50);
-        progressBar_5.setBounds(230, 195, 142, 22);
+        progressBar_5.setBounds(250, 195, 142, 22);
         progressBars.add(progressBar_5);
         contentPane.add(progressBar_5);
         JTextArea progressBarTxt_5 = new JTextArea();
@@ -285,14 +306,14 @@ public class DiningAppGui extends JFrame {
         progressBarTxt_5.setFont(new Font("Yu Gothic", Font.BOLD, 13));
         progressBarTxt_5.setLineWrap(true);
         progressBarTxt_5.setText("Hunger Level");
-        progressBarTxt_5.setBounds(230, 175, 142, 22);
+        progressBarTxt_5.setBounds(250, 175, 142, 22);
         contentPane.add(progressBarTxt_5);
         /* Finished Eating */
         JLabel lblFinishedEating5 = new JLabel("Finished eating");
         lblFinishedEating5.setOpaque(true);
         lblFinishedEating5.setVisible(false);
         lblFinishedEating5.setBackground(new Color(255, 20, 147));
-        lblFinishedEating5.setBounds(150, 260, 108, 20);
+        lblFinishedEating5.setBounds(170, 260, 108, 20);
         finishedList.add(lblFinishedEating5);
         contentPane.add(lblFinishedEating5);
 
@@ -300,7 +321,7 @@ public class DiningAppGui extends JFrame {
         lblFork_1.setBackground(new Color(205, 92, 92));
         lblFork_1.setOpaque(true);
         lblFork_1.setHorizontalAlignment(SwingConstants.CENTER);
-        lblFork_1.setBounds(600, 350, 66, 27);
+        lblFork_1.setBounds(620, 350, 66, 27);
         forkLabelList.add(lblFork_1);
         contentPane.add(lblFork_1);
 
@@ -308,7 +329,7 @@ public class DiningAppGui extends JFrame {
         lblFork_2.setBackground(new Color(205, 92, 92));
         lblFork_2.setOpaque(true);
         lblFork_2.setHorizontalAlignment(SwingConstants.CENTER);
-        lblFork_2.setBounds(570, 550, 66, 27);
+        lblFork_2.setBounds(590, 550, 66, 27);
         forkLabelList.add(lblFork_2);
         contentPane.add(lblFork_2);
 
@@ -316,7 +337,7 @@ public class DiningAppGui extends JFrame {
         lblFork_3.setBackground(new Color(205, 92, 92));
         lblFork_3.setOpaque(true);
         lblFork_3.setHorizontalAlignment(SwingConstants.CENTER);
-        lblFork_3.setBounds(320, 550, 66, 27);
+        lblFork_3.setBounds(350, 550, 66, 27);
         forkLabelList.add(lblFork_3);
         contentPane.add(lblFork_3);
 
@@ -324,7 +345,7 @@ public class DiningAppGui extends JFrame {
         lblFork_4.setBackground(new Color(205, 92, 92));
         lblFork_4.setOpaque(true);
         lblFork_4.setHorizontalAlignment(SwingConstants.CENTER);
-        lblFork_4.setBounds(270, 350, 66, 27);
+        lblFork_4.setBounds(290, 350, 66, 27);
         forkLabelList.add(lblFork_4);
         contentPane.add(lblFork_4);
 
@@ -332,7 +353,7 @@ public class DiningAppGui extends JFrame {
         lblFork_5.setBackground(new Color(205, 92, 92));
         lblFork_5.setOpaque(true);
         lblFork_5.setHorizontalAlignment(SwingConstants.CENTER);
-        lblFork_5.setBounds(440, 280, 66, 27);
+        lblFork_5.setBounds(460, 280, 66, 27);
         forkLabelList.add(lblFork_5);
         contentPane.add(lblFork_5);
 
@@ -343,6 +364,7 @@ public class DiningAppGui extends JFrame {
     private void startDining() {
         diningApp.start();
         Timer timer = new Timer();
+        /* execution is scheduled relative to the scheduled execution time of the initial execution */
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
@@ -386,20 +408,20 @@ public class DiningAppGui extends JFrame {
             ++philosopherCounter;
         }
         setPhilosopherColour();
-        checkIfSnoozing();
+        checkIfThinking();
     }
 
-    private void checkIfSnoozing() {
+    private void checkIfThinking() {
         for (Philosopher philosopher : diningApp.getPhilosophers()) {
             if (philosopher.isThinking()) {
-                putToSleep(philosopher);
+                startThinking(philosopher);
             } else {
-                wakeUp(philosopher);
+                stopThinking(philosopher);
             }
         }
     }
 
-    private void wakeUp(Philosopher philosopher) {
+    private void stopThinking(Philosopher philosopher) {
         switch (philosopher.getName()) {
             case "Philosopher: 1":
                 thinkList.get(0).setVisible(false);
@@ -421,7 +443,7 @@ public class DiningAppGui extends JFrame {
         }
     }
 
-    private void putToSleep(Philosopher philosopher) {
+    private void startThinking(Philosopher philosopher) {
         switch (philosopher.getName()) {
             case "Philosopher: 1":
                 thinkList.get(0).setVisible(true);
@@ -443,7 +465,7 @@ public class DiningAppGui extends JFrame {
         }
     }
 
-    private void setPhilosopherColour() {
+    public  void setPhilosopherColour() {
         for (Philosopher philosopher : diningApp.getPhilosophers()) {
             if (philosopher.isEating()) {
                 changeColourToGreen(philosopher);
