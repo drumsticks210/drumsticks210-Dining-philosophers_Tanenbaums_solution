@@ -34,7 +34,7 @@ private boolean hasLeftFork;
 private boolean hasRightFork;
 private int amountEaten;
 private boolean isFinished;
-private boolean isSnoozing;
+private boolean isThinking;
 private String name;
 private ArrayList<Fork> forks = new ArrayList<>();
 
@@ -45,15 +45,16 @@ public Philosopher(int name, Fork leftFork, Fork rightFork) {
         forks.add(rightFork);
 }
 
-public synchronized boolean isSnoozing() {
-        return isSnoozing;
+public synchronized boolean isThinking() {
+        return isThinking;
 }
 
-public synchronized void setSnoozing(boolean isSnoozing) {
-        this.isSnoozing = isSnoozing;
+public synchronized void setThinking(boolean isThinking) {
+        this.isThinking = isThinking;
 }
 
 public synchronized boolean isEating() {
+
         return isEating;
 }
 
@@ -135,9 +136,9 @@ private void startEating() {
         }
         isEating = false;
         try {
-                isSnoozing = true;
+                isThinking = true;
                 Thread.sleep(5000);
-                isSnoozing = false;
+                isThinking = false;
         } catch (InterruptedException e) {
                 e.printStackTrace();
         }
