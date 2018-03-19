@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * so the philosopher can eat and keep a running total of
  * how much the philosopher has eaten
  * @param name			This will hold the name of the philosopher
- * @param isSnoozing		Sets the philosopher to snoozing
+ * @param setThinking		Sets the philosopher to thinking
  * @param isEating		Sets the philosopher to eat
  * @param isFinished		The philosopher is done eating
  * @param hasLeftFork		Sets that the philosopher has the left fork
