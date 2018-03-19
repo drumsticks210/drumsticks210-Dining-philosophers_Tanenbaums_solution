@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef1bcc4d-56d6-4848-894f-a7e62c62c380" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui$2.class" afterPath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui.class" afterPath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningAppGui.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" afterPath="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" />
-      <change beforePath="$PROJECT_DIR$/src/diningphil/Philosopher.java" afterPath="$PROJECT_DIR$/src/diningphil/Philosopher.java" />
+      <change beforePath="$PROJECT_DIR$/src/diningphil/resource/Green.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/diningphil/resource/Layer 0-500pixels.png" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="DiningTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/DiningTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="836">
+              <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="e#781#782#0" expanded="true" />
                 <element signature="e#813#814#0" expanded="true" />
@@ -39,20 +39,27 @@
       <file leaf-file-name="DiningAppGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/diningphil/DiningAppGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="355" column="30" lean-forward="false" selection-start-line="355" selection-start-column="30" selection-end-line="355" selection-end-column="30" />
+            <state relative-caret-position="220">
+              <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
               <folding>
-                <element signature="e#16272#16653#0" expanded="true" />
-                <element signature="e#16652#16653#0" expanded="true" />
+                <element signature="e#16254#16635#0" expanded="true" />
+                <element signature="e#16634#16635#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="food.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diningphil/resource/food.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Philosopher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/Philosopher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
+            <state relative-caret-position="1584">
               <caret line="177" column="1" lean-forward="false" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,7 +99,7 @@
       <file leaf-file-name="Fork.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/Fork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="638">
               <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="e#602#603#0" expanded="true" />
@@ -109,7 +116,7 @@
       <file leaf-file-name="DiningApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/DiningApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="1298">
               <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
               <folding />
             </state>
@@ -124,6 +131,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,10 +161,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="width" value="2064" />
+    <option name="height" value="2116" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,13 +234,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="SearchEverywhereHistoryKey" value="status&#9;PSI&#9;JAVA://io.grpc.Status" />
+    <property name="SearchEverywhereHistoryKey" value="init&#9;PSI&#9;JAVA://diningphil.DiningTable&#10;status&#9;PSI&#9;JAVA://io.grpc.Status" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -431,21 +443,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="0" width="2064" height="2116" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18129988" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186502" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23576799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23289739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -458,6 +469,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -475,7 +487,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/production/Dining-philosophers_Tanenbaums_solution/diningphil/DiningApp.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/java/lang/Runnable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -562,8 +573,8 @@
         <state relative-caret-position="-7906">
           <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
           <folding>
-            <element signature="e#16272#16653#0" expanded="true" />
-            <element signature="e#16652#16653#0" expanded="true" />
+            <element signature="e#16254#16635#0" expanded="true" />
+            <element signature="e#16634#16635#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,20 +791,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diningphil/Fork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="638">
           <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="e#602#603#0" expanded="true" />
@@ -806,17 +806,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningApp.java">
+    <entry file="file://$PROJECT_DIR$/src/diningphil/resource/Green.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="836">
+          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diningphil/Philosopher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
+        <state relative-caret-position="1584">
           <caret line="177" column="1" lean-forward="false" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -852,18 +860,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diningphil/resource/Green.png">
+    <entry file="file://$PROJECT_DIR$/src/diningphil/resource/food.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/diningphil/DiningAppGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="355" column="30" lean-forward="false" selection-start-line="355" selection-start-column="30" selection-end-line="355" selection-end-column="30" />
+        <state relative-caret-position="220">
+          <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
           <folding>
-            <element signature="e#16272#16653#0" expanded="true" />
-            <element signature="e#16652#16653#0" expanded="true" />
+            <element signature="e#16254#16635#0" expanded="true" />
+            <element signature="e#16634#16635#0" expanded="true" />
           </folding>
         </state>
       </provider>

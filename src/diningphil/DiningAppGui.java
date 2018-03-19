@@ -12,20 +12,18 @@ package diningphil;
 
 import com.intellij.ui.JBColor;
 
-import java.awt.EventQueue;
+import java.awt.*;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import javax.swing.JLabel;
-import java.awt.Font;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import javax.swing.SwingConstants;
-import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
@@ -42,7 +40,6 @@ public class DiningAppGui extends JFrame {
     private ArrayList<JProgressBar> progressBars = new ArrayList<>();
     private ArrayList<JLabel> thinkList = new ArrayList<>();
     private ArrayList<JLabel> finishedList = new ArrayList<>();
-    private ArrayList<JLabel> legendList = new ArrayList<>();
     private DiningApp diningApp;
 
     /*
@@ -86,15 +83,15 @@ public class DiningAppGui extends JFrame {
         contentPane.add(roundTable);
 
         /* legend */
-        JLabel legend = new JLabel();
-        legend.setOpaque(true);
-        legend.setBackground(Color.LIGHT_GRAY);
-        legend.setVisible(true);
-        legend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Green.png")));
-        legend.setBounds(20, 240, 100, 250);
-        contentPane.add(legend);
+//        JLabel legend = new JLabel();
+//        legend.setOpaque(true);
+//        legend.setBackground(Color.LIGHT_GRAY);
+//        legend.setVisible(true);
+//        legend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/diningphil/resource/Green.png")));
+//        legend.setBounds(20, 240, 100, 250);
+//        contentPane.add(legend);
 
-        /* Test area*/
+        /* Text area*/
         JTextArea txtrObserveTheDining = new JTextArea();
         txtrObserveTheDining.setEditable(false);
         txtrObserveTheDining.setFont(new Font("Yu Gothic", Font.BOLD, 13));
@@ -103,7 +100,8 @@ public class DiningAppGui extends JFrame {
                 "- There are only 5 forks on the table \r\n" +
                 "- They are all hungry & want to eat\r\n" +
                 "- They can only eat when the fork to the left & right of them are both available\r\n" +
-                "- After eating for a period, they then take a nap");
+                "- After eating for a period, they then take a nap \r\n" +
+                "- The color Green around a philosopher symbolizes that he is eating.");
         txtrObserveTheDining.setBounds(40, 11, 843, 141);
         contentPane.add(txtrObserveTheDining);
 
@@ -186,7 +184,7 @@ public class DiningAppGui extends JFrame {
         JLabel lblFinishedEating2 = new JLabel("Finished eating");
         lblFinishedEating2.setOpaque(true);
         lblFinishedEating2.setVisible(false);
-        lblFinishedEating2.setBackground(new Color(255, 20, 147));
+        lblFinishedEating2.setBackground(Color.GREEN);
         lblFinishedEating2.setBounds(792, 490, 108, 20);
         finishedList.add(lblFinishedEating2);
         contentPane.add(lblFinishedEating2);
@@ -361,6 +359,8 @@ public class DiningAppGui extends JFrame {
         startDining();
     }
 
+
+
     private void startDining() {
         diningApp.start();
         Timer timer = new Timer();
@@ -465,7 +465,7 @@ public class DiningAppGui extends JFrame {
         }
     }
 
-    public  void setPhilosopherColour() {
+    public void setPhilosopherColour() {
         for (Philosopher philosopher : diningApp.getPhilosophers()) {
             if (philosopher.isEating()) {
                 changeColourToGreen(philosopher);
