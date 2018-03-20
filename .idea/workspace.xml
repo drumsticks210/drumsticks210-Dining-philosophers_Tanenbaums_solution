@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef1bcc4d-56d6-4848-894f-a7e62c62c380" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/diningphil/Philosopher.java" afterPath="$PROJECT_DIR$/src/diningphil/Philosopher.java" />
+      <change beforePath="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" afterPath="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiningAppGui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DiningAppGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/diningphil/DiningAppGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6039">
-              <caret line="112" column="52" lean-forward="true" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="52" />
+            <state relative-caret-position="1374">
+              <caret line="312" column="54" lean-forward="false" selection-start-line="312" selection-start-column="54" selection-end-line="312" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Philosopher.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Philosopher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/Philosopher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1705">
-              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="-1046">
+              <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1459#1460#0" expanded="true" />
@@ -65,7 +65,6 @@
                 <element signature="e#1778#1779#0" expanded="true" />
                 <element signature="e#1827#1828#0" expanded="true" />
                 <element signature="e#1861#1862#0" expanded="true" />
-                <element signature="e#1909#1910#0" expanded="true" />
                 <element signature="e#1942#1943#0" expanded="true" />
                 <element signature="e#2006#2007#0" expanded="true" />
                 <element signature="e#2050#2051#0" expanded="true" />
@@ -110,7 +109,7 @@
       <file leaf-file-name="DiningApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diningphil/DiningApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
+            <state relative-caret-position="1298">
               <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
               <folding />
             </state>
@@ -150,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/diningphil/DiningApp.java" />
         <option value="$PROJECT_DIR$/src/diningphil/DiningTable.java" />
         <option value="$PROJECT_DIR$/src/diningphil/Fork.java" />
-        <option value="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" />
         <option value="$PROJECT_DIR$/src/diningphil/Philosopher.java" />
+        <option value="$PROJECT_DIR$/src/diningphil/DiningAppGui.java" />
       </list>
     </option>
   </component>
@@ -197,6 +196,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,8 +220,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -435,14 +434,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18186502" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186502" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2359155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23893361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -450,7 +450,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -607,7 +606,6 @@
             <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#1827#1828#0" expanded="true" />
             <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
             <element signature="e#1942#1943#0" expanded="true" />
             <element signature="e#2006#2007#0" expanded="true" />
             <element signature="e#2050#2051#0" expanded="true" />
@@ -664,7 +662,6 @@
             <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#1827#1828#0" expanded="true" />
             <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
             <element signature="e#1942#1943#0" expanded="true" />
             <element signature="e#2006#2007#0" expanded="true" />
             <element signature="e#2050#2051#0" expanded="true" />
@@ -799,17 +796,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningAppGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6039">
-          <caret line="112" column="52" lean-forward="true" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diningphil/DiningApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
+        <state relative-caret-position="1298">
           <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
           <folding />
         </state>
@@ -817,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diningphil/Philosopher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1705">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="-1046">
+          <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1459#1460#0" expanded="true" />
@@ -829,7 +818,6 @@
             <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#1827#1828#0" expanded="true" />
             <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
             <element signature="e#1942#1943#0" expanded="true" />
             <element signature="e#2006#2007#0" expanded="true" />
             <element signature="e#2050#2051#0" expanded="true" />
@@ -850,6 +838,14 @@
             <element signature="e#5050#5051#0" expanded="true" />
             <element signature="e#5101#5102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diningphil/DiningAppGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1374">
+          <caret line="312" column="54" lean-forward="false" selection-start-line="312" selection-start-column="54" selection-end-line="312" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -142,7 +142,7 @@ public class DiningAppGui extends JFrame {
         JLabel lblFinishedEating1 = new JLabel("Finished eating");
         lblFinishedEating1.setOpaque(true);
         lblFinishedEating1.setVisible(false);
-        lblFinishedEating1.setBackground(new Color(255, 20, 147));
+        lblFinishedEating1.setBackground(Color.GREEN);
         lblFinishedEating1.setBounds(732, 240, 108, 20);
         finishedList.add(lblFinishedEating1);
         contentPane.add(lblFinishedEating1);
@@ -226,7 +226,7 @@ public class DiningAppGui extends JFrame {
         JLabel lblFinishedEating3 = new JLabel("Finished eating");
         lblFinishedEating3.setOpaque(true);
         lblFinishedEating3.setVisible(false);
-        lblFinishedEating3.setBackground(new Color(255, 20, 147));
+        lblFinishedEating3.setBackground(Color.GREEN);
         lblFinishedEating3.setBounds(572, 665, 108, 20);
         finishedList.add(lblFinishedEating3);
         contentPane.add(lblFinishedEating3);
@@ -268,7 +268,7 @@ public class DiningAppGui extends JFrame {
         JLabel lblFinishedEating4 = new JLabel("Finished eating");
         lblFinishedEating4.setOpaque(true);
         lblFinishedEating4.setVisible(false);
-        lblFinishedEating4.setBackground(new Color(255, 20, 147));
+        lblFinishedEating4.setBackground(Color.GREEN);
         lblFinishedEating4.setBounds(135, 480, 108, 20);
         finishedList.add(lblFinishedEating4);
         contentPane.add(lblFinishedEating4);
@@ -310,7 +310,7 @@ public class DiningAppGui extends JFrame {
         JLabel lblFinishedEating5 = new JLabel("Finished eating");
         lblFinishedEating5.setOpaque(true);
         lblFinishedEating5.setVisible(false);
-        lblFinishedEating5.setBackground(new Color(255, 20, 147));
+        lblFinishedEating5.setBackground(Color.GREEN);
         lblFinishedEating5.setBounds(170, 260, 108, 20);
         finishedList.add(lblFinishedEating5);
         contentPane.add(lblFinishedEating5);
